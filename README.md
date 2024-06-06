@@ -11,7 +11,7 @@ Used to record the installation and configuration of ubuntu server
 * **Substitute User:**
 
 ## Install Miniconda
-* **Download Installation Script:** Download the script from the anaconda website
+* **Download Installation Script:** Download the script from the anaconda website [https://docs.anaconda.com/free/miniconda/](https://docs.anaconda.com/free/miniconda/)
     * `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 
 * **Run Installation Script:** It is best to run in the target path to avoid selecting a path when conda is installed
