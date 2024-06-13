@@ -27,6 +27,11 @@ Used to record the installation and configuration of ubuntu server
 * **Activate Conda:** Select yes during the installation process, conda will automatically change the configuration file, and need to reload the configuration file
     * `source ~/.bashrc`
 
+## Install PostgreSQL
+* **Install by APT:** Advanced Package Tool is a package management tool provided with the Ubuntu system
+   * `sudo apt update` (Update the package list on Ubuntu system to ensure installing the latest version)
+   * `sudo apt install postgresql`
+
 ## Setup Git
 * **User Name:** The user name will be recorded with each commit and is important for the code hosting repository statistics
    * `git config --global user.name "<username>"`
