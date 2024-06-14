@@ -41,7 +41,6 @@ Used to record the installation and configuration of ubuntu server
 * **Switch To Superuser:** In general, the super administrator does not support remote access and does not allow password login, and can only use sudo to log in to the 'postgres' account in ubuntu
    * `sudo -i -u postgres`
    * `psql -U <username> -d <database>` (open the PostgreSQL interactive terminal)
-   * `\q` (exit the PostgreSQL interactive terminal)
 
 * **Add User:**
    * `CREATE USER <username> WITH PASSWORD '<password>';`
