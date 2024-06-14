@@ -23,7 +23,7 @@ Used to record the installation and configuration of ubuntu server
    * `sudo passwd <username>` 
 
 ## Install Miniconda
-* **Download Installation Script:** Download script from the anaconda website [https://docs.anaconda.com/free/miniconda/](https://docs.anaconda.com/free/miniconda/)
+* **Download Installation Script:** Download script from anaconda website [https://docs.anaconda.com/free/miniconda/](https://docs.anaconda.com/free/miniconda/)
     * `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 
 * **Run Installation Script:** It is best to run in the target path to avoid selecting a path when conda is installed
@@ -48,6 +48,7 @@ Used to record the installation and configuration of ubuntu server
  
 * **Authority Management:**
    * `\du` (lists all PostgreSQL users and their permissions)
+   * `\dp` (lists permissions of all tables and views)
 
 ## Setup Git
 * **User Name:** The user name will be recorded with each commit and is important for the code hosting repository statistics
