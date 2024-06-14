@@ -40,15 +40,20 @@ Used to record the installation and configuration of ubuntu server
 ## PostgreSQL Account
 * **Switch To Superuser:** In general, the super administrator does not support remote access and does not allow password login, and can only use sudo to log in to the 'postgres' account in ubuntu
    * `sudo -i -u postgres`
-   * `psql` (open the PostgreSQL interactive terminal)
+   * `psql -U <username> -d <database>` (open the PostgreSQL interactive terminal)
    * `\q` (exit the PostgreSQL interactive terminal)
 
 * **Add User:**
    * `CREATE USER <username> WITH PASSWORD '<password>';`
  
-* **Authority Management:**
+* **Check Permission Division:**
    * `\du` (lists all PostgreSQL users and their permissions)
-   * `\dp` (lists permissions of all tables and views)
+
+* **Add Permission:**
+  * `ALTER ROLE <username> CREATEDB;`
+  * `GRANT CONNECT ON DATABASE <database> TO <username>;`
+  * `GRANT USAGE ON SCHEMA <schema> TO <username>;`
+  * `GRANT SELECT ON ALL TABLES IN SCHEMA <schema> TO <username>;`
 
 ## Setup Git
 * **User Name:** The user name will be recorded with each commit and is important for the code hosting repository statistics
